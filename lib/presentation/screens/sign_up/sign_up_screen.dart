@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:prueba_tecnica_double_v_partners/presentation/screens/sign_up/sign_up_screen.dart';
+import 'package:prueba_tecnica_double_v_partners/presentation/screens/profile_features/profile_features_screen.dart';
 
-class LoginScreen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
 
-  static const String name = 'login_screen';
+  static const name = 'sign_up_screen';
 
-  const LoginScreen({super.key});
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login Screen'),
+        title: const Text('sing up screen'),
       ),
       body: Column(
         children: [
           TextButton(
             onPressed: (){
-              context.pushNamed(SignUpScreen.name);
+              context.pushNamed(ProfileFeaturesScreen.name);
             },
             child:Text('Go to sign up screen')
           )
@@ -26,4 +26,5 @@ class LoginScreen extends StatelessWidget {
       ),
     );
   }
+
 }
